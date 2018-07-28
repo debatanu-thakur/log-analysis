@@ -55,7 +55,6 @@ class MessageHandler(BaseHTTPRequestHandler):
         except IOError:
             self.send_error(404, 'File Not Found: %s' % self.path)
 
-
 if __name__ == '__main__':
     try:
         server_address = ('', 8000)
